@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: sumanthreddy
+  password: 1994
+  host: 127.0.0.1
+
+development:
+  <<: *default
+  database: postgres
+
+# test:
+#   <<: *default
+#   database: my_app_test
+
+# production:
+#   <<: *default
+#   database: my_app_production
+#   username: my_app
+#   password: <%= ENV['MY_APP_DATABASE_PASSWORD'] %>
